@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; 
+charset=windows-1251">
+<title>Стили</title>
+</head>
+<body>
+<script>
+function func(){
+a=document.getElementByld("a_znach").value
+e=a
+d=a
+c=a
+b=a
+a=a*a;
+a=a*a;
+document.getElementByld("z161a").innerHTML="a^4="+a;
+a=b
+a=a*a
+a=a*a*a
+document.getElementByld("z161b").innerHTML="a^6="+a;
+}
+<script>
+
+1.61
+a=<input.type="text"value="0"
+id="a_znach">
+<button onclick="func()">
+knopushka2</button>
+<div id="z161a"></div>
+<div id="z161b"></div>
+</body>
+</html>
