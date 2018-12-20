@@ -1,0 +1,42 @@
+<script> 
+function funk(){ 
+n=document.getElementById("punkt_a").value; 
+y=n 
+x=n%10 
+a=(n-x)/10 
+n=100*x+a 
+document.getElementById("a").innerHTML ="2.25= "+ n+"</h1>"; 
+x=(y-y%100)/100 
+a=y%100 
+n=10*a+x 
+document.getElementById("b").innerHTML ="2.27= "+ n+"</h1>"; 
+x=((y-y%100)/10+y%10) 
+n=10*x+(y%100-y%10)/10 
+document.getElementById("c").innerHTML ="2.29= "+ n+"</h1>"; 
+x=((y-y%100)/10+y%10) 
+n=(y%100-y%10)*10+x 
+document.getElementById("d").innerHTML ="2.31= "+ n+"</h1>"; 
+x=y%10 
+a=(y%100-x)+(y-y%100)/100 
+n=100*x+a 
+document.getElementById("e").innerHTML ="2.33= "+ n+"</h1>"; 
+} 
+</script> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+n=<input type="text" value="0" id="punkt_a"> 
+<br> 
+<br> 
+<button onclick="funk()">knopochka</button> 
+<br> 
+<br> 
+<div id="a"></div> 
+<div id="b"></div> 
+<div id="c"></div> 
+<div id="d"></div> 
+<div id="e"></div>
+ 
