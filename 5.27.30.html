@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<script>
+function func1() {
+a = Number(document.getElementById("a_znach").value);
+b = Number(document.getElementById("b_znach").value);
+var s = 0;
+var i = a;
+while (i <= b) {
+s = s + i;
+i++;
+}
+document.getElementById("otvet1").innerHTML = s;
+}
+function func2() {
+a = Number(document.getElementById("a2_znach").value);
+b = Number(document.getElementById("b2_znach").value);
+var s = 1;
+var i = a;
+while (i < b+1) {
+s = s * i;
+i++;
+}
+document.getElementById("otvet2").innerHTML = s;
+}
+function func3() {
+a = Number(document.getElementById("a3_znach").value);
+b = Number(document.getElementById("b3_znach").value);
+var s = 0;
+var i = a;
+var x=0
+for (i = a; i <= b; i++) {
+s = s + i;
+x=x+1;
+
+}
+document.getElementById("otvet3").innerHTML = s / x;
+}
+function func4() {
+a = Number(document.getElementById("a4_znach").value);
+b = Number(document.getElementById("b4_znach").value);
+var s = 0;
+var i = a;
+while (i < b+1) {
+s = s + i*i;
+i=i+1;
+}
+document.getElementById("otvet4").innerHTML = s;
+}
+function func5() {
+n = Number(document.getElementById("n_znach").value);
+var s = 0;
+var i = n;
+var r ;
+while (i < 2*n+1) {
+r = i * i;
+s = s + r;
+i++;
+}
+document.getElementById("otvet5").innerHTML = s;
+}
+</script>
+</head>
+
+<body>
+
+<h1>5.27г</h1> a=
+<input type="text" value="0" id="a_znach">
+b=<input type="text" value="0" id="b_znach">
+<a href="#" onclick="func1()" class="button green text-blanco text-shadow-negra">!</a>
+<div id="otvet1"></div>
+<br>
+<br>
+<br>
+<br>
+<h1>5.28г</h1> 
+a=<input type="text" value="0" id="a2_znach">
+b=<input type="text" value="0" id="b2_znach">
+<a href="#" onclick="func2()" class="button green text-blanco text-shadow-negra">!</a>
+<div id="otvet2"></div>
+<br>
+<br>
+<br>
+<br>
+<h1>5.29г</h1> 
+a=<input type="text" value="1" id="a3_znach">
+b=<input type="text" value="10" id="b3_znach">
+<a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">!</a>
+<div id="otvet3"></div>
+<br>
+<br>
+<br>
+<br>
+<h1>5.30г</h1> 
+a=<input type="text" value="0" id="a4_znach">
+b=<input type="text" value="0" id="b4_znach">
+<a href="#" onclick="func4()" class="button green text-blanco text-shadow-negra">!</a>
+<div id="otvet4"></div>
+<br>
+<br>
+<br>
+<br>
+<h1>5.31г</h1> 
+n=<input type="text" value="0" id="n_znach">
+<a href="#" onclick="func5()" class="button red text-blanco text-shadow-negra">!</a>
+<div id="otvet5"></div>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
